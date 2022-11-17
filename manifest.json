@@ -1,5 +1,13 @@
 {
   "manifest_version": 2,
-  "name": "",
-  "version": "1.0"
+  "name": "Modzilla",
+  "version": "1.0",
+  "description": "",
+  "content_scripts": [
+    {
+      "matches": ["https://developer.mozilla.org/en-US/docs/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": ["storage"]
 }
